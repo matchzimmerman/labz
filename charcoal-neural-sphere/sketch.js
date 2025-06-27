@@ -12,7 +12,7 @@ function setup() {
   }
 
   stroke(0, 40); // Light graphite tone
-  strokeWeight(0.25); // Very thin lines
+  strokeWeight(0.5); // Very thin lines
   noFill();
 }
 
@@ -41,7 +41,7 @@ class Tendril {
     this.current = start.copy();
     this.direction = inheritDir ? inheritDir.copy() : p5.Vector.random3D().mult(0.5);
     this.length = 0;
-    this.maxLength = int(random(300, 800)); // How far this tendril will grow
+    this.maxLength = int(random(500, 1200)); // How far this tendril will grow
   }
 
   grow() {
